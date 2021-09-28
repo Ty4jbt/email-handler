@@ -5,7 +5,7 @@ const cors = require('cors');
 app.use(express.json());
 
 // ADD CORS BEFORE PUT INTO PRODUCTION 
-app.use(cors());
+app.use(cors('https://email-handler-tb.herokuapp.com/'));
 
 const ses = require('./ses');
 
